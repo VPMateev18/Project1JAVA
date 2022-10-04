@@ -1,0 +1,77 @@
+
+public class Dog {
+    private String breed;
+    public Dog() {
+        this.breed = "Labrador";
+    }
+
+    public Dog(String breed) {
+        this.breed = breed;
+    }
+
+    public String getbreed() {
+        return breed;
+    }
+
+    public void setbreed(String breed) {
+        this.breed = breed;
+    }
+
+    public void info() {
+        System.out.printf("%s is the best breed you can have!!", breed);
+    }
+
+}
+
+public class DogOwner {
+
+    private String name;
+    private String height;
+    private String city;
+    public DogOwner() {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getHeight() {
+        return height;
+    }
+
+    public void setHeight(String height) {
+        this.height = height;
+    }
+
+    public String getcity() {
+        return city;
+    }
+
+    public void setcity(String city) {
+        city = city;
+    }
+
+    public void info(){
+        System.out.printf("I am %s, and I have the best dog ever, I was born in %s and my height is %s",name,city,height);
+    }
+
+}
+
+import java.util.Scanner;
+    public class Main {
+
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("First person info");
+            DogOwner person1 = new DogOwner();
+            person1.setName(sc.nextLine());
+            person1.setCity(sc.nextLine());
+            person1.setHeight(sc.nextLine());
+            person1.info();
+        }
+    }
