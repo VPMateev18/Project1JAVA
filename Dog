@@ -1,0 +1,23 @@
+public class Dog {
+    private String breed;
+    public Dog() {
+        this.breed = "Labrador";
+    }
+
+    public Dog(String breed) {
+        this.breed = breed;
+    }
+
+    public String getbreed() {
+        return breed;
+    }
+
+    public void setbreed(String breed) {
+        this.breed = breed;
+    }
+
+    public void info() {
+        System.out.printf("%s is the best breed you can have!!", breed);
+    }
+
+}
